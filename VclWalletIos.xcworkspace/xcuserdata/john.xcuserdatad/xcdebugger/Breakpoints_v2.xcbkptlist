@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "40275560-225B-461F-8DFD-A615B88B9D3A"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "92B0178B-025D-49EE-A60F-F93693F3F97C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VclWalletIos/WalletApi.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getWalletStatus(credentials:handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3485EF47-D5C8-4E4E-964C-0A4A138C5415"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "VclWalletIos/SjclEncryptMessage.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "decrypt(msg:encryptKey:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3485EF47-D5C8-4E4E-964C-0A4A138C5415 - d02a089881cb10a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static VclWalletIos.SjclEncryptMessage.decrypt(msg: Swift.String, encryptKey: Swift.String) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "VclWalletIos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/john/Desktop/VclWalletIos/VclWalletIos/SjclEncryptMessage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40"
+                  offsetFromSymbolStart = "292">
+               </Location>
+               <Location
+                  uuid = "3485EF47-D5C8-4E4E-964C-0A4A138C5415 - 7dcd5443bb74c34d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;__C.JSContext&gt;, Swift.Optional&lt;__C.JSValue&gt;) -&gt; () in static VclWalletIos.SjclEncryptMessage.decrypt(msg: Swift.String, encryptKey: Swift.String) -&gt; Swift.Optional&lt;Swift.String&gt;"
+                  moduleName = "VclWalletIos"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/john/Desktop/VclWalletIos/VclWalletIos/SjclEncryptMessage.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "104">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

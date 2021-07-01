@@ -1,0 +1,6 @@
+framework module Pods_VclWalletIosTests {
+  umbrella header "Pods-VclWalletIosTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

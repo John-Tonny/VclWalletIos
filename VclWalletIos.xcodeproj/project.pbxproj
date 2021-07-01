@@ -1,0 +1,799 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		307C9011B080E04C07742EA4 /* Pods_VclWalletIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A25D0138586203742253EC4D /* Pods_VclWalletIos.framework */; };
+		35ECD85AA3E57A57F1C5A703 /* Pods_VclWalletIos_VclWalletIosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEE06236AE660A8A4593395E /* Pods_VclWalletIos_VclWalletIosUITests.framework */; };
+		4EA16CF65933044526A11395 /* Pods_VclWalletIosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFEE86C8E388A7B18D9BCD8 /* Pods_VclWalletIosTests.framework */; };
+		5247AFA8268D75C000788260 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFA7268D75C000788260 /* AppDelegate.swift */; };
+		5247AFAA268D75C000788260 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFA9268D75C000788260 /* SceneDelegate.swift */; };
+		5247AFAC268D75C000788260 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFAB268D75C000788260 /* ViewController.swift */; };
+		5247AFAF268D75C000788260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5247AFAD268D75C000788260 /* Main.storyboard */; };
+		5247AFB2268D75C000788260 /* VclWalletIos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFB0268D75C000788260 /* VclWalletIos.xcdatamodeld */; };
+		5247AFB4268D75D700788260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5247AFB3268D75D700788260 /* Assets.xcassets */; };
+		5247AFB7268D75D700788260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5247AFB5268D75D700788260 /* LaunchScreen.storyboard */; };
+		5247AFC2268D75D700788260 /* VclWalletIosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFC1268D75D700788260 /* VclWalletIosTests.swift */; };
+		5247AFCD268D75D700788260 /* VclWalletIosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFCC268D75D700788260 /* VclWalletIosUITests.swift */; };
+		5247AFE4268D764A00788260 /* WalletApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFDD268D764900788260 /* WalletApiRequest.swift */; };
+		5247AFE5268D764A00788260 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFDE268D764900788260 /* Credentials.swift */; };
+		5247AFE6268D764A00788260 /* WalletApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFDF268D764900788260 /* WalletApi.swift */; };
+		5247AFE7268D764A00788260 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFE0268D764900788260 /* Utils.swift */; };
+		5247AFE8268D764A00788260 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFE1268D764900788260 /* Extensions.swift */; };
+		5247AFE9268D764A00788260 /* WalletModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFE2268D764900788260 /* WalletModel.swift */; };
+		5247AFEA268D764A00788260 /* SjclEncryptMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247AFE3268D764900788260 /* SjclEncryptMessage.swift */; };
+		5247B006268DA11E00788260 /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5247B005268DA11E00788260 /* Transaction.swift */; };
+		5247B013268DC79600788260 /* sjcl.js in Resources */ = {isa = PBXBuildFile; fileRef = 5247B012268DC79600788260 /* sjcl.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5247AFBE268D75D700788260 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5247AF9C268D75C000788260 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5247AFA3268D75C000788260;
+			remoteInfo = VclWalletIos;
+		};
+		5247AFC9268D75D700788260 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5247AF9C268D75C000788260 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5247AFA3268D75C000788260;
+			remoteInfo = VclWalletIos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08300CF0278CEF63FF93C275 /* Pods-VclWalletIos-VclWalletIosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VclWalletIos-VclWalletIosUITests.release.xcconfig"; path = "Target Support Files/Pods-VclWalletIos-VclWalletIosUITests/Pods-VclWalletIos-VclWalletIosUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1C361FFE14A763D454BBDA5C /* Pods-VclWalletIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VclWalletIos.debug.xcconfig"; path = "Target Support Files/Pods-VclWalletIos/Pods-VclWalletIos.debug.xcconfig"; sourceTree = "<group>"; };
+		4E713A7114B68F77160B3157 /* Pods-VclWalletIos-VclWalletIosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VclWalletIos-VclWalletIosUITests.debug.xcconfig"; path = "Target Support Files/Pods-VclWalletIos-VclWalletIosUITests/Pods-VclWalletIos-VclWalletIosUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5247AFA4268D75C000788260 /* VclWalletIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VclWalletIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5247AFA7268D75C000788260 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5247AFA9268D75C000788260 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5247AFAB268D75C000788260 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5247AFAE268D75C000788260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5247AFB1268D75C000788260 /* VclWalletIos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VclWalletIos.xcdatamodel; sourceTree = "<group>"; };
+		5247AFB3268D75D700788260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5247AFB6268D75D700788260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5247AFB8268D75D700788260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5247AFBD268D75D700788260 /* VclWalletIosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VclWalletIosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5247AFC1268D75D700788260 /* VclWalletIosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VclWalletIosTests.swift; sourceTree = "<group>"; };
+		5247AFC3268D75D700788260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5247AFC8268D75D700788260 /* VclWalletIosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VclWalletIosUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5247AFCC268D75D700788260 /* VclWalletIosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VclWalletIosUITests.swift; sourceTree = "<group>"; };
+		5247AFCE268D75D700788260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5247AFDD268D764900788260 /* WalletApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletApiRequest.swift; sourceTree = "<group>"; };
+		5247AFDE268D764900788260 /* Credentials.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		5247AFDF268D764900788260 /* WalletApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletApi.swift; sourceTree = "<group>"; };
+		5247AFE0268D764900788260 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		5247AFE1268D764900788260 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		5247AFE2268D764900788260 /* WalletModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WalletModel.swift; sourceTree = "<group>"; };
+		5247AFE3268D764900788260 /* SjclEncryptMessage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SjclEncryptMessage.swift; sourceTree = "<group>"; };
+		5247B005268DA11E00788260 /* Transaction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		5247B012268DC79600788260 /* sjcl.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = sjcl.js; path = Assets.xcassets/sjcl.js; sourceTree = "<group>"; };
+		541A694B51E7AA6FD3575981 /* Pods-VclWalletIosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VclWalletIosTests.debug.xcconfig"; path = "Target Support Files/Pods-VclWalletIosTests/Pods-VclWalletIosTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5AFEE86C8E388A7B18D9BCD8 /* Pods_VclWalletIosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VclWalletIosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		67758BC9AAA08EE508064323 /* Pods-VclWalletIosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VclWalletIosTests.release.xcconfig"; path = "Target Support Files/Pods-VclWalletIosTests/Pods-VclWalletIosTests.release.xcconfig"; sourceTree = "<group>"; };
+		A25D0138586203742253EC4D /* Pods_VclWalletIos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VclWalletIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DEE06236AE660A8A4593395E /* Pods_VclWalletIos_VclWalletIosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VclWalletIos_VclWalletIosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7CE2DC055EC0919930B5AA2 /* Pods-VclWalletIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VclWalletIos.release.xcconfig"; path = "Target Support Files/Pods-VclWalletIos/Pods-VclWalletIos.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5247AFA1268D75C000788260 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				307C9011B080E04C07742EA4 /* Pods_VclWalletIos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5247AFBA268D75D700788260 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EA16CF65933044526A11395 /* Pods_VclWalletIosTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5247AFC5268D75D700788260 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35ECD85AA3E57A57F1C5A703 /* Pods_VclWalletIos_VclWalletIosUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D63DA00EA96E877A28C68D8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C361FFE14A763D454BBDA5C /* Pods-VclWalletIos.debug.xcconfig */,
+				F7CE2DC055EC0919930B5AA2 /* Pods-VclWalletIos.release.xcconfig */,
+				4E713A7114B68F77160B3157 /* Pods-VclWalletIos-VclWalletIosUITests.debug.xcconfig */,
+				08300CF0278CEF63FF93C275 /* Pods-VclWalletIos-VclWalletIosUITests.release.xcconfig */,
+				541A694B51E7AA6FD3575981 /* Pods-VclWalletIosTests.debug.xcconfig */,
+				67758BC9AAA08EE508064323 /* Pods-VclWalletIosTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		2FBD8655159E4D261EAE4383 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A25D0138586203742253EC4D /* Pods_VclWalletIos.framework */,
+				DEE06236AE660A8A4593395E /* Pods_VclWalletIos_VclWalletIosUITests.framework */,
+				5AFEE86C8E388A7B18D9BCD8 /* Pods_VclWalletIosTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5247AF9B268D75C000788260 = {
+			isa = PBXGroup;
+			children = (
+				5247AFA6268D75C000788260 /* VclWalletIos */,
+				5247AFC0268D75D700788260 /* VclWalletIosTests */,
+				5247AFCB268D75D700788260 /* VclWalletIosUITests */,
+				5247AFA5268D75C000788260 /* Products */,
+				2D63DA00EA96E877A28C68D8 /* Pods */,
+				2FBD8655159E4D261EAE4383 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5247AFA5268D75C000788260 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5247AFA4268D75C000788260 /* VclWalletIos.app */,
+				5247AFBD268D75D700788260 /* VclWalletIosTests.xctest */,
+				5247AFC8268D75D700788260 /* VclWalletIosUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5247AFA6268D75C000788260 /* VclWalletIos */ = {
+			isa = PBXGroup;
+			children = (
+				5247AFA7268D75C000788260 /* AppDelegate.swift */,
+				5247AFA9268D75C000788260 /* SceneDelegate.swift */,
+				5247AFAB268D75C000788260 /* ViewController.swift */,
+				5247AFDE268D764900788260 /* Credentials.swift */,
+				5247AFE1268D764900788260 /* Extensions.swift */,
+				5247AFE3268D764900788260 /* SjclEncryptMessage.swift */,
+				5247AFE0268D764900788260 /* Utils.swift */,
+				5247AFDF268D764900788260 /* WalletApi.swift */,
+				5247B012268DC79600788260 /* sjcl.js */,
+				5247AFDD268D764900788260 /* WalletApiRequest.swift */,
+				5247AFE2268D764900788260 /* WalletModel.swift */,
+				5247B005268DA11E00788260 /* Transaction.swift */,
+				5247AFAD268D75C000788260 /* Main.storyboard */,
+				5247AFB3268D75D700788260 /* Assets.xcassets */,
+				5247AFB5268D75D700788260 /* LaunchScreen.storyboard */,
+				5247AFB8268D75D700788260 /* Info.plist */,
+				5247AFB0268D75C000788260 /* VclWalletIos.xcdatamodeld */,
+			);
+			path = VclWalletIos;
+			sourceTree = "<group>";
+		};
+		5247AFC0268D75D700788260 /* VclWalletIosTests */ = {
+			isa = PBXGroup;
+			children = (
+				5247AFC1268D75D700788260 /* VclWalletIosTests.swift */,
+				5247AFC3268D75D700788260 /* Info.plist */,
+			);
+			path = VclWalletIosTests;
+			sourceTree = "<group>";
+		};
+		5247AFCB268D75D700788260 /* VclWalletIosUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5247AFCC268D75D700788260 /* VclWalletIosUITests.swift */,
+				5247AFCE268D75D700788260 /* Info.plist */,
+			);
+			path = VclWalletIosUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5247AFA3268D75C000788260 /* VclWalletIos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5247AFD1268D75D700788260 /* Build configuration list for PBXNativeTarget "VclWalletIos" */;
+			buildPhases = (
+				0EAFE089DE921D1EC9DD4EE0 /* [CP] Check Pods Manifest.lock */,
+				5247AFA0268D75C000788260 /* Sources */,
+				5247AFA1268D75C000788260 /* Frameworks */,
+				5247AFA2268D75C000788260 /* Resources */,
+				B68A71309D7E3999D0869437 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VclWalletIos;
+			productName = VclWalletIos;
+			productReference = 5247AFA4268D75C000788260 /* VclWalletIos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5247AFBC268D75D700788260 /* VclWalletIosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5247AFD4268D75D700788260 /* Build configuration list for PBXNativeTarget "VclWalletIosTests" */;
+			buildPhases = (
+				7FAE3CEDB32C2BEE8C3718E1 /* [CP] Check Pods Manifest.lock */,
+				5247AFB9268D75D700788260 /* Sources */,
+				5247AFBA268D75D700788260 /* Frameworks */,
+				5247AFBB268D75D700788260 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5247AFBF268D75D700788260 /* PBXTargetDependency */,
+			);
+			name = VclWalletIosTests;
+			productName = VclWalletIosTests;
+			productReference = 5247AFBD268D75D700788260 /* VclWalletIosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5247AFC7268D75D700788260 /* VclWalletIosUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5247AFD7268D75D700788260 /* Build configuration list for PBXNativeTarget "VclWalletIosUITests" */;
+			buildPhases = (
+				62EB6A85FCA9AF5A25030D67 /* [CP] Check Pods Manifest.lock */,
+				5247AFC4268D75D700788260 /* Sources */,
+				5247AFC5268D75D700788260 /* Frameworks */,
+				5247AFC6268D75D700788260 /* Resources */,
+				8F9679A8EF3CAE84F0D825E3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5247AFCA268D75D700788260 /* PBXTargetDependency */,
+			);
+			name = VclWalletIosUITests;
+			productName = VclWalletIosUITests;
+			productReference = 5247AFC8268D75D700788260 /* VclWalletIosUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5247AF9C268D75C000788260 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5247AFA3268D75C000788260 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					5247AFBC268D75D700788260 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5247AFA3268D75C000788260;
+					};
+					5247AFC7268D75D700788260 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5247AFA3268D75C000788260;
+					};
+				};
+			};
+			buildConfigurationList = 5247AF9F268D75C000788260 /* Build configuration list for PBXProject "VclWalletIos" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5247AF9B268D75C000788260;
+			productRefGroup = 5247AFA5268D75C000788260 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5247AFA3268D75C000788260 /* VclWalletIos */,
+				5247AFBC268D75D700788260 /* VclWalletIosTests */,
+				5247AFC7268D75D700788260 /* VclWalletIosUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5247AFA2268D75C000788260 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5247AFB7268D75D700788260 /* LaunchScreen.storyboard in Resources */,
+				5247AFB4268D75D700788260 /* Assets.xcassets in Resources */,
+				5247B013268DC79600788260 /* sjcl.js in Resources */,
+				5247AFAF268D75C000788260 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5247AFBB268D75D700788260 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5247AFC6268D75D700788260 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EAFE089DE921D1EC9DD4EE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VclWalletIos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62EB6A85FCA9AF5A25030D67 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VclWalletIos-VclWalletIosUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7FAE3CEDB32C2BEE8C3718E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VclWalletIosTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F9679A8EF3CAE84F0D825E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VclWalletIos-VclWalletIosUITests/Pods-VclWalletIos-VclWalletIosUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VclWalletIos-VclWalletIosUITests/Pods-VclWalletIos-VclWalletIosUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VclWalletIos-VclWalletIosUITests/Pods-VclWalletIos-VclWalletIosUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B68A71309D7E3999D0869437 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VclWalletIos/Pods-VclWalletIos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VclWalletIos/Pods-VclWalletIos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VclWalletIos/Pods-VclWalletIos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5247AFA0268D75C000788260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5247AFE9268D764A00788260 /* WalletModel.swift in Sources */,
+				5247AFE6268D764A00788260 /* WalletApi.swift in Sources */,
+				5247B006268DA11E00788260 /* Transaction.swift in Sources */,
+				5247AFE8268D764A00788260 /* Extensions.swift in Sources */,
+				5247AFEA268D764A00788260 /* SjclEncryptMessage.swift in Sources */,
+				5247AFE5268D764A00788260 /* Credentials.swift in Sources */,
+				5247AFAC268D75C000788260 /* ViewController.swift in Sources */,
+				5247AFE4268D764A00788260 /* WalletApiRequest.swift in Sources */,
+				5247AFA8268D75C000788260 /* AppDelegate.swift in Sources */,
+				5247AFB2268D75C000788260 /* VclWalletIos.xcdatamodeld in Sources */,
+				5247AFAA268D75C000788260 /* SceneDelegate.swift in Sources */,
+				5247AFE7268D764A00788260 /* Utils.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5247AFB9268D75D700788260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5247AFC2268D75D700788260 /* VclWalletIosTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5247AFC4268D75D700788260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5247AFCD268D75D700788260 /* VclWalletIosUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5247AFBF268D75D700788260 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5247AFA3268D75C000788260 /* VclWalletIos */;
+			targetProxy = 5247AFBE268D75D700788260 /* PBXContainerItemProxy */;
+		};
+		5247AFCA268D75D700788260 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5247AFA3268D75C000788260 /* VclWalletIos */;
+			targetProxy = 5247AFC9268D75D700788260 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5247AFAD268D75C000788260 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5247AFAE268D75C000788260 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5247AFB5268D75D700788260 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5247AFB6268D75D700788260 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5247AFCF268D75D700788260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5247AFD0268D75D700788260 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5247AFD2268D75D700788260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C361FFE14A763D454BBDA5C /* Pods-VclWalletIos.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VclWalletIos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jlw999000.VclWalletIos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5247AFD3268D75D700788260 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7CE2DC055EC0919930B5AA2 /* Pods-VclWalletIos.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VclWalletIos/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jlw999000.VclWalletIos;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5247AFD5268D75D700788260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 541A694B51E7AA6FD3575981 /* Pods-VclWalletIosTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VclWalletIosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jlw999000.VclWalletIosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VclWalletIos.app/VclWalletIos";
+			};
+			name = Debug;
+		};
+		5247AFD6268D75D700788260 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67758BC9AAA08EE508064323 /* Pods-VclWalletIosTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VclWalletIosTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jlw999000.VclWalletIosTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VclWalletIos.app/VclWalletIos";
+			};
+			name = Release;
+		};
+		5247AFD8268D75D700788260 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E713A7114B68F77160B3157 /* Pods-VclWalletIos-VclWalletIosUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VclWalletIosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jlw999000.VclWalletIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VclWalletIos;
+			};
+			name = Debug;
+		};
+		5247AFD9268D75D700788260 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08300CF0278CEF63FF93C275 /* Pods-VclWalletIos-VclWalletIosUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = VclWalletIosUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = jlw999000.VclWalletIosUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VclWalletIos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5247AF9F268D75C000788260 /* Build configuration list for PBXProject "VclWalletIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5247AFCF268D75D700788260 /* Debug */,
+				5247AFD0268D75D700788260 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5247AFD1268D75D700788260 /* Build configuration list for PBXNativeTarget "VclWalletIos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5247AFD2268D75D700788260 /* Debug */,
+				5247AFD3268D75D700788260 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5247AFD4268D75D700788260 /* Build configuration list for PBXNativeTarget "VclWalletIosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5247AFD5268D75D700788260 /* Debug */,
+				5247AFD6268D75D700788260 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5247AFD7268D75D700788260 /* Build configuration list for PBXNativeTarget "VclWalletIosUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5247AFD8268D75D700788260 /* Debug */,
+				5247AFD9268D75D700788260 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5247AFB0268D75C000788260 /* VclWalletIos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5247AFB1268D75C000788260 /* VclWalletIos.xcdatamodel */,
+			);
+			currentVersion = 5247AFB1268D75C000788260 /* VclWalletIos.xcdatamodel */;
+			path = VclWalletIos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5247AF9C268D75C000788260 /* Project object */;
+}
