@@ -89,8 +89,8 @@ public struct PendingTxpsModel: Codable {
     let network: String
     let outputs: [OutputModel]
     let amount: Int
-    let message: String
-    let payProUrl: String
+    let message: String?
+    let payProUrl: String?
     let changeAddress: ChangeAddressModel
     let inputs: [InputModel]
     let walletM: Int
@@ -108,14 +108,14 @@ public struct PendingTxpsModel: Codable {
     let addressType: String
     let customData: String
     let proposalSignature: String
-    let isInstantSend: Bool
+    let isInstantSend: Bool?
     let derivationStrategy: String
     let creatorName: String
-    let txid: String
-    let broadcastedOn: Int
-    let proposalSignaturePubKey: String
-    let proposalSignaturePubKeySig: String
-    let raw: String
+    let txid: String?
+    let broadcastedOn: Int?
+    let proposalSignaturePubKey: String?
+    let proposalSignaturePubKeySig: String?
+    let raw: String?
 
     let atomicswap: AtomicswapDataModel?
     let atomicswapAddr: String?

@@ -17,8 +17,64 @@ class ViewController: UIViewController {
     @IBOutlet weak var txtAddress: UITextField!
     @IBOutlet weak var txtPort: UITextField!
     @IBOutlet weak var txtTxid: UITextField!
-    @IBAction func btnGetMasternodeCollateral(_ sender: Any) {
+    
+    @IBAction func btnGetMasternodeStatus(_ sender: Any) {
+        if(self.credentials == nil) {
+            tvInfo.text = "请先打开钱包！！！"
+            return
+        }
         
+        func myHandler(data: [MasternodeStatusModel]?, errMsg: String? ){
+            if( errMsg == nil){
+                var info = ""
+                for status in data! {
+                    info += modelToString(data: status) + "\n"
+                }
+                tvInfo.text = info
+            }else {
+                tvInfo.text = errMsg
+            }
+        }
+        
+        var txid: String?
+        var vout: Int?
+        if(txtTxid.text != "" && txtVout.text != ""){
+            txid = txtTxid.text!
+            vout = Int(txtVout.text!)
+        }
+        
+        self.bwsApi!.getMasternodeStatus(credentials: self.credentials!, txid: txid, vout: vout,  handler: myHandler)
+
+    }
+    @IBAction func btnGetMasternodes(_ sender: Any) {
+        if(self.credentials == nil) {
+            tvInfo.text = "请先打开钱包！！！"
+            return
+        }
+        
+        func myHandler(data: [MasternodeModel]?, errMsg: String? ){
+            if( errMsg == nil){
+                tvInfo.text = modelToString(data: data!)
+                var info = ""
+                for status in data! {
+                    info += modelToString(data: status) + "\n"
+                }
+                tvInfo.text = info
+            }else {
+                tvInfo.text = errMsg
+            }
+        }
+        var txid: String?
+        var vout: Int?
+        if(txtTxid.text != "" && txtVout.text != ""){
+            txid = txtTxid.text!
+            vout = Int(txtVout.text!)
+        }
+        
+        self.bwsApi!.getMasternodes(credentials: self.credentials!, txid: txid, vout: vout,  handler: myHandler)
+
+    }
+    @IBAction func btnGetMasternodeCollateral(_ sender: Any) {
         if(self.credentials == nil) {
             tvInfo.text = "请先打开钱包！！！"
             return

@@ -28,7 +28,8 @@ public class WalletApi {
         let url = self.bwsUrl + api
         let headers = HTTPHeaders(credentials.getHeaders(method: "get", url: api, args: "{}"))
 
-        Alamofire.AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers ).responseJSON { response in /*.responseDecodable(decoder: decoder) { (response: DataResponse<WalletModel, AFError>) in*/
+        // let decoder = JSONDecoder()
+        Alamofire.AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers).responseJSON { response in /*.responseDecodable(decoder: decoder) { (response: DataResponse<WalletModel, AFError>) in*/
             switch response.result {
             case .success(let value):
                 var result = toModel(WalletModel.self, value: value)
@@ -647,6 +648,7 @@ public class WalletApi {
                 
         let headers = HTTPHeaders(credentials.getHeaders(method: "post", url: api, args: "{}"))
 
+        let decoder = JSONDecoder()
         Alamofire.AF.request(url,
                              method: .post,
                              parameters: nil,
