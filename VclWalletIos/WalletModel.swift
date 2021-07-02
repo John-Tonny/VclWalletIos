@@ -10,19 +10,19 @@ import HdWalletKit
 
 public struct WalletModel: Codable {
     var wallet: WalletCoreModel
-    let preferences: PreferencesModel
+    let preferences: PreferencesModel?
     let pendingTxps: [PendingTxpsModel]
     let pendingAtomicSwapTxps: [PendingTxpsModel]?
     let balance: BalanceModel
     
     struct PreferencesModel: Codable {
-        let copayerId: String
-        let createdOn: Int
-        let email: String
-        let language: String
-        let unit: String
-        let version: String
-        let walletId: String
+        let copayerId: String?
+        let createdOn: Int?
+        let email: String?
+        let language: String?
+        let unit: String?
+        let version: String?
+        let walletId: String?
     }
 }
 
@@ -44,8 +44,6 @@ struct WalletCoreModel: Codable {
     let addressManager: AddressManagerModel
     let pubKey: String
     let publicKeyRing: [PublicKeyRingModel]
-    
-    
 }
 
 struct AddressManagerModel: Codable {

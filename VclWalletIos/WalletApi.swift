@@ -29,7 +29,7 @@ public class WalletApi {
         let headers = HTTPHeaders(credentials.getHeaders(method: "get", url: api, args: "{}"))
 
         // let decoder = JSONDecoder()
-        Alamofire.AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers).responseJSON { response in /*.responseDecodable(decoder: decoder) { (response: DataResponse<WalletModel, AFError>) in*/
+        Alamofire.AF.request(url, method: .get, parameters: nil, encoding: URLEncoding.default, headers: headers).responseJSON { response in/*.responseDecodable(decoder: decoder) { (response: DataResponse<WalletModel, AFError>) in */
             switch response.result {
             case .success(let value):
                 var result = toModel(WalletModel.self, value: value)
@@ -639,20 +639,24 @@ public class WalletApi {
             }
         }
     }
-    public func createAddress(credentials: Credentials, handler: @escaping (AddressModel?, String?)->()) {
+    public func createAddress(credentials: Credentials, ignoreMaxGap: Bool = false, handler: @escaping (AddressModel?, String?)->()) {
         
         checkCredentials(credentials: credentials)
         
         let api = "/v4/addresses/"
         let url = self.bwsUrl + api
                 
-        let headers = HTTPHeaders(credentials.getHeaders(method: "post", url: api, args: "{}"))
+        let createAddressRequest = CreateAddressRequest(ignoreMaxGap: ignoreMaxGap)
+        
+        let encoder = JSONEncoder()
+        let jsonData = try!encoder.encode(createAddressRequest)
+        let strData = String(data: jsonData, encoding: .utf8)!
+        let headers = HTTPHeaders(credentials.getHeaders(method: "post", url: api, args: strData))
 
-        let decoder = JSONDecoder()
         Alamofire.AF.request(url,
                              method: .post,
-                             parameters: nil,
-                             encoding:  URLEncoding.default,
+                             parameters: createAddressRequest,
+                             encoder: JSONParameterEncoder.default,
                              headers: headers ).responseJSON { response in
             switch response.result {
             case .success(let value):

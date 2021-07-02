@@ -112,9 +112,8 @@ public struct MasternodeBaseRequest: Codable {
     
 }
 
-public struct BaseRequest {
-    
-
+public struct CreateAddressRequest: Codable {
+    let ignoreMaxGap: Bool
 }
 
 struct TStrInt: Codable {

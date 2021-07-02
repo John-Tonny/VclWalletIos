@@ -117,6 +117,11 @@ class ViewController: UIViewController {
         }
         
         self.credentials = try!Credentials()
+        var words = ""
+        for data in self.credentials!.mnemonic {
+            words += data + " "
+        }
+        tvMnemonic.text =  words
         self.bwsApi!.createAndJoinWallet(credentials: self.credentials!, walletName: "vclWallet",  handler: myHandler)
     }
     
@@ -173,7 +178,8 @@ class ViewController: UIViewController {
             }
         }
         
-        self.bwsApi!.createAddress(credentials: self.credentials!, handler: myHandler)
+        let ignoreMaxGap = false
+        self.bwsApi!.createAddress(credentials: self.credentials!, ignoreMaxGap: ignoreMaxGap, handler: myHandler)
 
     }
     @IBAction func btnImportWallet(_ sender: Any) {
